@@ -1,7 +1,12 @@
 # AI-Based Financial Health Assessment Platform for SMEs
 
 ## Overview
-This project analyzes financial data of small and medium enterprises (SMEs) to evaluate business health, credit risk, and profitability. It provides actionable insights and recommendations using AI-style logic.
+This project is an AI-based Financial Health Assessment Platform designed for Small and Medium Enterprises (SMEs).
+
+The system allows users to upload financial CSV files and automatically analyzes revenue, expenses, and profit using intelligent data classification. Based on the analysis, it evaluates overall business health, assigns a financial health score, assesses credit risk, and provides optimization recommendations.
+
+The solution is built using FastAPI and Python with pandas for data processing. It is deployed as a public REST API with interactive Swagger documentation, enabling easy testing and integration. This platform helps SMEs quickly understand their financial condition and make informed business decisions.
+
 
 ## Features
 - Upload CSV financial data
