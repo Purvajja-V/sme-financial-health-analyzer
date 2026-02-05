@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SME Financial Analyzer</title>
+</head>
+<body>
+    <h2>Upload your CSV file</h2>
+    <input type="file" id="csvFile">
+    <button onclick="uploadFile()">Analyze</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function uploadFile() {
+            const fileInput = document.getElementById('csvFile');
+            if (!fileInput.files.length) {
+                alert("Please select a file!");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append("file", file);
+
+            try {
+                const response = await fetch("http://127.0.0.1:8000/analyze/", {
+                    method: "POST",
+                    body: formData
+                });
+                const data = await response.json();
+                document.getElementById("result").textContent = JSON.stringify(data, null, 2);
+            } catch (err) {
+                document.getElementById("result").textContent = "Error: " + err;
+            }
+        }
+    </script>
+</body>
+</html>
