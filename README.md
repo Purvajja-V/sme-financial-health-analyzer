@@ -1,2 +1,25 @@
-# sme-financial-health-analyzer
-AI-based financial health assessment platform for SMEs using FastAPI and pandas to analyze financial data, assess credit risk, and provide actionable insights.
+# AI-Based Financial Health Assessment Platform for SMEs
+
+## Overview
+This project analyzes financial data of small and medium enterprises (SMEs) to evaluate business health, credit risk, and profitability. It provides actionable insights and recommendations using AI-style logic.
+
+## Features
+- Upload CSV financial data
+- Automatic revenue, expense, and profit detection
+- Financial health scoring
+- Credit risk assessment
+- Cost optimization recommendations
+- REST API using FastAPI
+- Interactive Swagger UI
+
+## Tech Stack
+- Python
+- FastAPI
+- pandas, NumPy
+- Swagger UI
+- Deployed on Render
+
+## How to Run Locally
+```bash
+pip install -r requirements.txt
+uvicorn main:app --reload
