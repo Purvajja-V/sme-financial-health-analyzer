@@ -19,7 +19,37 @@ This project analyzes financial data of small and medium enterprises (SMEs) to e
 - Swagger UI
 - Deployed on Render
 
+## Live Demo
+The application is deployed and publicly accessible.
+
+Base URL:
+https://YOUR_RENDER_URL.onrender.com
+
+API Documentation:
+https://YOUR_RENDER_URL.onrender.com/docs
+
 ## How to Run Locally
-```bash
+bash
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+## API Usage
+
+### Analyze Financial Data
+Endpoint:
+POST /analyze/
+
+Input:
+- CSV file containing financial data
+
+Output:
+- Business health status
+- Financial health score
+- Revenue, expense, and profit detection
+- Credit risk assessment
+- Optimization recommendations
+
+The API can be tested directly using Swagger UI.
+
+
+
