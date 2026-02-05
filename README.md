@@ -23,10 +23,10 @@ This project analyzes financial data of small and medium enterprises (SMEs) to e
 The application is deployed and publicly accessible.
 
 Base URL:
-https://YOUR_RENDER_URL.onrender.com
+https://sme-financial-health-analyzer.onrender.com
 
 API Documentation:
-https://YOUR_RENDER_URL.onrender.com/docs
+https://sme-financial-health-analyzer.onrender.com/docs
 
 ## How to Run Locally
 bash
